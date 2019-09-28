@@ -2,16 +2,16 @@
 <div *ngIf="!loading" class="col-sm-6 offset-sm-3 mt-2">
   <form [formGroup]="thingForm">
     <div class="form-group">
-      <label for="title">Title</label>
-      <input type="text" placeholder="What are you selling?" id="title" formControlName="title" class="form-control">
+      <label for="title">Titre</label>
+      <input type="text" placeholder="Que vendez-vous ?" id="title" formControlName="title" class="form-control">
     </div>
-    <button class="btn btn-success" type="button" (click)="filePicker.click()">Add Image</button>
+    <button class="btn btn-success" type="button" (click)="filePicker.click()">Ajouter image</button>
     <input type="file" #filePicker (change)="onImagePick($event)">
     <div class="image-preview" *ngIf="imagePreview">
       <img [src]="imagePreview" alt="">
     </div>
     <div class="form-group">
-      <label for="price">Price (in €)</label>
+      <label for="price">Prix (in €)</label>
       <input type="number" id="price" class="form-control" formControlName="price" min="0">
     </div>
     <div class="form-group">
@@ -21,9 +21,9 @@
                 cols="30" rows="7"
                 class="form-control"
                 formControlName="description"
-                placeholder="Describe your product (type, quality, etc.)"></textarea>
+                placeholder="Décrivez votre objet (type, qualité, etc.)"></textarea>
     </div>
-    <button class="btn btn-primary" (click)="onSubmit()" [disabled]="thingForm.invalid">Submit</button>
+    <button class="btn btn-primary" (click)="onSubmit()" [disabled]="thingForm.invalid">Valider</button>
     <p class="alert-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
   </form>
 </div>
