@@ -13,16 +13,16 @@ export class StuffService {
   private stuff: Thing[] = [
     {
       _id: '324sdfmoih3',
-      title: 'My thing',
-      description: 'All about my thing',
+      title: 'Mon objet',
+      description: 'A propos de mon objet',
       imageUrl: 'https://c.pxhere.com/photos/30/d6/photographer_camera_lens_slr_photography_hands-1079029.jpg!d',
       price: 4900,
       userId: 'will'
     },
     {
       _id: '324sdfmoih4',
-      title: 'Another thing',
-      description: 'All about my thing',
+      title: 'Un autre objet',
+      description: 'A propos de mon autre objet',
       imageUrl: 'https://www.publicdomainpictures.net/pictures/10000/velka/1536-1249273362hbHb.jpg',
       price: 2600,
       userId: 'will'
